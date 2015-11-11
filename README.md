@@ -6,7 +6,8 @@
 
 ## Usage
 
-
+To run
+npm start
 
 ## Developing
 
