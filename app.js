@@ -16,8 +16,6 @@ var users = require('./routes/users');
 
 var app = express();
 
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -41,6 +39,10 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
+app.use(function(err, req, res, next) {
+	  console.log(err.stack);
+	  res.status(500).send('Something broke!');
+	});
 
 // development error handler
 // will print stacktrace

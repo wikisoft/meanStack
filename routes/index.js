@@ -82,15 +82,15 @@ router.param('comment', function(req, res, next, id) {
 	  });
 	});
 
-//router.get('/posts/:post/comments/:comment', function(req, res) {
-//	  res.json(req.comment);
-//	});
+router.get('/posts/:post/comments/:comment', function(req, res) {
+	  res.json(req.comment);
+	});
 
 router.put('/posts/:post/comments/:comment/upvote', function(req, res, next) {
-	  req.post.comments.coment.upvote(function(err, post){
+	  req.comment.upvote(function(err, comment){
 	    if (err) { return next(err); }
 
-	    res.json(post);
+	    res.json(comment);
 	  });
 	});
 
