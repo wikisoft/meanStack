@@ -1,0 +1,25 @@
+{
+  "name": "flapper-news",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Rachid <wikicenter-soft@yahoo.fr>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wikisoft/meanStack",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.4.7",
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.5.0",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}
